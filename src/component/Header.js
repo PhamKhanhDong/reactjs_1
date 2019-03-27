@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return(
-      <h1>Header</h1>
+      <div className="header">
+        <h1>Header</h1>
+      </div>
     );
   }
 }

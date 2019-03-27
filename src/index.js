@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Wapper from './component/Wapper';
+import Wrapper from './component/Wrapper';
 
-ReactDOM.render(<Wapper />, document.getElementById('root'));
+ReactDOM.render(<Wrapper />, document.getElementById('root'));
