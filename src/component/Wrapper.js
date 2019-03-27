@@ -44,6 +44,10 @@ class Wrapper extends Component {
     console.log(this.refs.content.getState());
   }
 
+  onSubmit = data => {
+    console.log(data);
+  }
+
   render() {
     // let name = this.state.name;
     // let price = this.state.price;
@@ -56,7 +60,7 @@ class Wrapper extends Component {
         <input type="button" value="call content" onClick={() => this.callContent()}/>
         <Header />
         <Left />
-        <Content ref="content" name={name} price={price}/>
+        <Content ref="content" name={name} price={price} onSubmit={this.onSubmit}/>
         <Right />
         <Footer />
       </div>
